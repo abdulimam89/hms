@@ -1,0 +1,34 @@
+# WordPress core - not tracked, this repo only tracks custom theme/plugin code
+/wordpress/
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/index.php
+/license.txt
+/readme.html
+/wp-config.php
+
+# Uploads & generated content
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backup*/
+
+# Third-party plugins/themes not authored by us (installed via wp-admin, not versioned here)
+wp-content/plugins/*
+!wp-content/plugins/hms-affiliate/
+wp-content/themes/*
+!wp-content/themes/hms-theme/
+wp-content/themes/twenty*/
+
+# Local dev / env
+.env
+*.log
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Local WP / LocalWP specific
+.ddev/
+wp-content/debug.log
